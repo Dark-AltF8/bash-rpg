@@ -1,6 +1,6 @@
 # Bash-RPG
 
-Bash-RPG is a lightweight, terminal-based role-playing game built using Bash. The project is a way for me to learn how Bash works.
+Bash-RPG is a simple, terminal-based role-playing game built using Bash. The project is a way for me to learn how Bash works.
 
 ## Features
 - **Turn-based combat** (basic for the time being) system.
