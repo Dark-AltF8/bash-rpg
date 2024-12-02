@@ -1,18 +1,4 @@
 #!/bin/bash
-# https://www.youtube.com/watch?v=Fq6gqi9Ubog&list=PLIhvC56v63IKioClkSNDjW7iz-6TFvLwS&index=4
-
-# Summary of Bash Numeric Comparison Operators:
-# -eq: Equal to
-# -ne: Not equal to
-# -gt: Greater than
-# -ge: Greater than or equal to
-# -lt: Less than
-# -le: Less than or equal to
-# These operators are used in numeric comparisons inside [[ ]].
-
-# Regex Matching
-# ^[0-9]+$ is the regular expression, meaning "one or more digits."
-# =~ tests whether $string matches this pattern.
 
 #######################################################################################################################
 
@@ -33,15 +19,6 @@ enemy_attack_calc() {
     local max_range=2  # For range 0-1
     local enemy_attack=$(openssl rand -hex 2 | tr -d '\n' | awk '{ print "0x" $1 }' | xargs printf "%d")
     printf "%d" $((enemy_attack % max_range))  # we'll use printf here with the %d option to specifiy we always want a decimal number. Using printf will make the output predictible each and everytime.
-}
-
-# Function to trigger an alert
-player_alert() {
-    if tput bel &>/dev/null; then
-        tput bel   # Use terminfo-aware bell
-    else
-        printf "\a"  # Fallback to ASCII bell
-    fi
 }
 
 #######################################################################################################################
@@ -77,10 +54,8 @@ done
 # If the enemy attack is less than or equal to the player attack, the player wins.
 if [[ $enemy_attack -le $player_attack ]]; then
     printf "\n%s (your attack was %d the enemy attack was %d)\n\n" "$enemy_died" "$player_attack" "$enemy_attack"
-    player_alert
 else
     printf "\n%s (the enemy attack was %d the player attack was %d)\n\n" "$player_died" "$enemy_attack" "$player_attack"
-    player_alert
     exit 1
 fi
 
