@@ -2,16 +2,18 @@
 
 Bash-RPG is a simple, terminal-based role-playing game built using Bash. The project is a way for me to learn how Bash works.
 
-## Features
+### Features
 - **Turn-based combat** (basic for the time being) system.
-- **Character creation** (planned) with customizable stats.
-- **Interactive gameplay** (planned) with story progression.
-- **Charm.sh integration** (planned) for enhanced terminal UI.
+
+### Planned Features
+- **Character creation** with customizable stats.
+- **Interactive gameplay** with story progression.
+- **Charm.sh integration** for enhanced terminal UI.
 
 ## Getting Started
 
 ### Prerequisites
-- Bash (version 4.0 or higher) [This should work in other shells also]
+- Bash (version 4.0 or higher) (This should work in other shells also)
 
 ### Installation
 1. Clone the repository:
@@ -27,4 +29,5 @@ Bash-RPG is a simple, terminal-based role-playing game built using Bash. The pro
     bash bash-rpg.sh
 
 License
+
 This project is licensed under the MIT License.
