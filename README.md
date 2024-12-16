@@ -9,7 +9,7 @@ Bash-RPG is a simple, terminal-based role-playing game built using Bash. The pro
 - **Character creation** with customizable stats.
 - **Interactive gameplay** with story progression.
 
-### Very far in to the future
+#### Very far in to the future
 - **Charm.sh integration** for enhanced terminal UI.
 
 ## Getting Started
