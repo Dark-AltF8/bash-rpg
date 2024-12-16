@@ -32,4 +32,4 @@ Bash-RPG is a simple, terminal-based role-playing game built using Bash. The pro
 
 License
 
-This project is licensed under the MIT License.
+####This project is licensed under the MIT License.
